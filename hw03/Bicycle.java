@@ -16,6 +16,7 @@ public class Bicycle{
         myScanner = new Scanner( System.in );       //call the scanner constructor
         //Ask for input (# counts and # seconds during which the counts occured)
         //Assign to variables
+        
         System.out.print("Enter the number of seconds: ");
         int numSeconds = myScanner.nextInt();
         System.out.print("Enter the number of counts: ");
