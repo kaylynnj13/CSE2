@@ -28,6 +28,7 @@ public class SmileGenerator{
         z++;
     } while(z <= 5);
     System.out.println("");
+    
     // Generate random number of smiles
     int numSmiles = (int)( 1 + Math.random()*100);
     System.out.println("Print out " + numSmiles + " smiles: ");
