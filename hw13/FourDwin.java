@@ -164,14 +164,21 @@ public class FourDwin{
                         }
                         else if( A[i][j][m].length == min ){
                             double min4d = 50;
-                            for( int b = k; b < A[i][j].length; b++){
-                                for( int l = 0; l < A[i][j][b].length; l++ ){
-                                    if( A[i][j][b][l] < min4d ){
-                                        min4d = A[i][j][b][l];
-                                        index = b;
+                            //Find the minimum in the two arrays that have equal length
+                            for( int h = 0; h < A[i][j][k].length; h++ ){
+                                    if( A[i][j][k][h] < min4d ){
+                                        min4d = A[i][j][k][h];
+                                        index = k;
                                     }
-                                }
                             }
+                            for( int g = 0; g < A[i][j][m].length; g++ ){
+                                    if( A[i][j][m][g] < min4d ){
+                                        min4d = A[i][j][m][g];
+                                        index = m;
+                                    }
+                            }
+                                
+                            
                         }
                         
                     }
